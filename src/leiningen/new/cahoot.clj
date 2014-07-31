@@ -22,6 +22,5 @@
              ["src/{{sanitized}}/handler.clj" (render "handler.clj")]
              ["test/{{sanitized}}/test_helper.clj" (render "test_helper.clj")]
              ["Procfile" (render "Procfile")]
-             ["README.md" (render "README.md")]
              [".gitignore" (render "gitignore")]
              ["project.clj" (render "project.clj")])))
