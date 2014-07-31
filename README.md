@@ -1,10 +1,10 @@
 # cahoot
 
-A Leiningen template for FIXME.
+[![Clojars Project](http://clojars.org/cahoot/lein-template/latest-version.svg)](http://clojars.org/cahoot/lein-template)
 
 ## Usage
 
-FIXME
+  > lein new cahoot project-name
 
 ## License
 
