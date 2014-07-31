@@ -1,4 +1,4 @@
-(defproject cahoot/lein-template "0.1.5"
+(defproject cahoot/lein-template "0.1.6"
   :description "dependencies and macros to help bootstrap your clojure application"
   :url "https://github.com/kitallis/cahoot"
   :license {:name "Eclipse Public License"
