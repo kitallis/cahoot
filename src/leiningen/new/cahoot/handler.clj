@@ -1,8 +1,7 @@
 (ns {{name}}.handler
     (:require [compojure.api.sweet :refer :all]
               [ring.util.http-response :refer :all]
-              [schema.core :as s]
-              [kulu-backend.models.invoice :as invoice]))
+              [schema.core :as s]))
 
 (s/defschema {{name}} {:id java.util.UUID
                        (s/optional-key :name) s/Str

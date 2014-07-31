@@ -1,10 +1,10 @@
-(ns kulu-backend.test-helper
-  (:require [clj-sql-up.migrate :as m]
-            [clojure.java.jdbc :as j]
-            [clojure.string :as s :only [replace]]
-            [clojure.test :refer :all]
-            [environ.core :as environ]
-            [kulu-backend.db :as db]))
+(ns {{name}}.test-helper
+    (:require [clj-sql-up.migrate :as m]
+              [clojure.java.jdbc :as j]
+              [clojure.string :as s :only [replace]]
+              [clojure.test :refer :all]
+              [environ.core :as environ]
+              [{{name}}.db :as db]))
 
 (defn db-spec
   []

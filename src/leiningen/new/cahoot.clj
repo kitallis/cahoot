@@ -2,19 +2,18 @@
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]
             [leiningen.core.main :as main]))
 
-(def render (renderer "cahoot"))
-
 (defn cahoot
   "Bootstrap your clojure application with a few essentials."
   [name]
   (let [data {:name name
-              :sanitized (name-to-path name)}]
+              :sanitized (name-to-path name)}
+        render #((renderer "cahoot") % data)]
     (main/info "Generating fresh 'lein new' cahoot project.")
     (->files data
              "bin/"
              "resources/"
-             "src/{{name}}/"
-             "test/{{name}}/"
+             "src/{{sanitized}}/"
+             "test/{{sanitized}}/"
              ["bin/server-start" (render "bin/server-start")]
              ["src/{{sanitized}}/db.clj" (render "db.clj")]
              ["src/{{sanitized}}/web.clj" (render "web.clj")]

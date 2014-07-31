@@ -1,1 +1,1 @@
-web lein trampoline run -m kulu-backend.web $PORT
+web lein trampoline run -m {{name}}.web $PORT

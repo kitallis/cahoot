@@ -1,3 +1,3 @@
 #!/bin/sh
 
-lein run -m kulu-backend.web 3001
+lein run -m {{name}}.web 3001

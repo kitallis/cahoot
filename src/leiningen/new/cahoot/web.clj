@@ -1,6 +1,6 @@
-(ns kulu-backend.web
+(ns {{name}}.web
   (:require [com.duelinmarkers.ring-request-logging :refer [wrap-request-logging]]
-            [kulu-backend.handler :refer [app]]
+            [{{name}}.handler :refer [app]]
             [ring.adapter.jetty :as jetty]
             [ring.middleware.format-params :refer [wrap-json-params]]
             [ring.middleware.keyword-params :refer [wrap-keyword-params]]
